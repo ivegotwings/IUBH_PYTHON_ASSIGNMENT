@@ -48,11 +48,11 @@ class CSVCleanser:
     def __filter_rows_by_values(self, df, col, values):
         return df[~df[col].isin(values)]
 
-    def clean(self, col): 
+    def removeOutliers(self, col): 
         self.df.sort_values(0, inplace=True)
         self.df.drop_duplicates(inplace=True)
-        outliers = self.__outlier_info(1)
-        self.df = self.__filter_rows_by_values(self.df, 1, outliers)
+        outliers = self.__outlier_info(col)
+        self.df = self.__filter_rows_by_values(self.df, col, outliers)
 
     def print_cleansing_info(self):
         print('cleaning file information for {}: {}'.format(self.label, self.__clean_info()))
