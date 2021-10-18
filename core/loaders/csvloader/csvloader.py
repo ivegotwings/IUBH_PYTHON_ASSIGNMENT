@@ -4,6 +4,10 @@ import traceback
 import json
 
 class CSVLoader:
+    """
+        Modules loads data from csv file in a pandas dataframe
+        the csv_info method can be used to generate information about the data
+    """
     def __init__(self, path, label):
         self.csv_file_path = path
         self.label = label

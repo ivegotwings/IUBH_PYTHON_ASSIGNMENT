@@ -6,6 +6,9 @@ from numpy import mean
 from numpy import std
 
 class CSVCleanser:
+    """
+        This module provides functionality to clean the csv data loaded using the loader module
+    """
     def __init__(self, ndarray, label):
         self.data = ndarray
         self.label = label
@@ -13,6 +16,12 @@ class CSVCleanser:
 
     
     def __clean_info(self):
+        """
+            provides information about the data after
+                removing duplicates
+                remonin na
+                sroting by first column
+        """
         info = {}
         try:
             df = self.df
@@ -32,6 +41,10 @@ class CSVCleanser:
         return info_json
 
     def __outlier_info(self, col):
+        """
+            private function
+            finds outliers using mean and deviation
+        """
         df = pd.DataFrame(self.data)
         data = df[col].to_numpy()
 
@@ -49,6 +62,9 @@ class CSVCleanser:
         return df[~df[col].isin(values)]
 
     def removeOutliers(self, col): 
+        """
+            removes outliers using the __filter_rows_by_values private function utility
+        """
         self.df.sort_values(0, inplace=True)
         self.df.drop_duplicates(inplace=True)
         outliers = self.__outlier_info(col)
