@@ -1,8 +1,15 @@
+<h1>Results</h1>
+<h2>Please load output.csv present inside the data/output path</h2>
+<ul>
+    <li>The fine contains the x-y mappings of test data aginst ideal functions and their deviation as per the criterion in the assignment</li>
+    <li>The count column contains the number of ideal functions that matched the criterion</li>
+</ul>
+
 <h2>Journal</h2>
 <p>Includes is journal.ipynb, a jupiter notebook that contains the write up journal for the written assignment</p>
 <p>Also journal.pdf is included for convinience.</p>
 
-<h2>Code</h2>
+<h1>Code</h1>
 <p>Core module contains the tools to load and clean data</p>
 <p>The stat module contains the statistical methods required for the task such as leastSquared</p>
 <p>The main program generates print and csv outputs</p>
@@ -10,11 +17,10 @@
 <b>data > output  folder</b> has 5 csv
 <ul
     <li>4 csv files correspond to each ideal function</li>
-    <li>output.csv contains the collaborated information from running</li>
-    <li>each test data across the selected ideal functions and the final results of counts.</li>
+    <li>output.csv contains the collaborated information from running each test data across the selected ideal functions and the final results of counts.</li>
 </ul>
 
-<h2>Set up</h2>
+<h1>Set up</h1>
     1. Clone the develop branch
     2. Install the required packages
         pandas
