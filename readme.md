@@ -21,7 +21,7 @@
 </ul>
 
 <h1>Set up</h1>
-    1. Clone the develop branch
+    1. Clone the develop branch. https://github.com/ivegotwings/IUBH_PYTHON_ASSIGNMENT/tree/develop
     2. Install the required packages
         pandas
         numpy
