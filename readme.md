@@ -1,5 +1,5 @@
 <h1>Results</h1>
-<h2>Please load output.csv present inside the data/output path</h2>
+<h2>Please load output.csv present inside the data/csv/output path</h2>
 <ul>
     <li>The fine contains the x-y mappings of test data aginst ideal functions and their deviation as per the criterion in the assignment</li>
     <li>The count column contains the number of ideal functions that matched the criterion</li>
