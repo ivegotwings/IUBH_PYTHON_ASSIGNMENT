@@ -26,6 +26,7 @@ Use miniconda to set up an environment
 
 Or you can install these packages
 # packages in environment at /Users/sh.kumar/opt/miniconda3:
+```
 appnope                   0.1.2           py39hecd8cb5_1001  
 backcall                  0.2.0              pyhd3eb1b0_0  
 blas                      1.0                         mkl  
@@ -120,4 +121,5 @@ yaml                      0.2.5                haf1e3a3_0
 zeromq                    4.3.4                h23ab428_0  
 zlib                      1.2.11               h1de35cc_3  
 zstd                      1.5.0                h582d3a0_0    conda-forge
+```
 
