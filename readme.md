@@ -2,7 +2,7 @@
 Includes is journal.ipynb, a jupiter notebook that contains the write up journal for the written assignment
 Also journal.pdf is included for convinience.
 
-<h2>Code<h2>
+<h2>Code</h2>
 core module contains the tools to load and clean data
 the stat module contains the statistical methods required for the task such as leastSquared
 the main program generates print and csv outputs
