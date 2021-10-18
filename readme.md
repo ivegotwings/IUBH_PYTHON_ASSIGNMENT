@@ -1,16 +1,18 @@
 <h2>Journal</h2>
-Includes is journal.ipynb, a jupiter notebook that contains the write up journal for the written assignment
-Also journal.pdf is included for convinience.
+<p>Includes is journal.ipynb, a jupiter notebook that contains the write up journal for the written assignment</p>
+<p>Also journal.pdf is included for convinience.</p>
 
 <h2>Code</h2>
-core module contains the tools to load and clean data
-the stat module contains the statistical methods required for the task such as leastSquared
-the main program generates print and csv outputs
+<p>Core module contains the tools to load and clean data</p>
+<p>The stat module contains the statistical methods required for the task such as leastSquared</p>
+<p>The main program generates print and csv outputs</p>
 
-data > output  folder has 5 csv
-4 csv files correspond to each ideal function
-output.csv contains the collaborated information from running
-each test data across the selected ideal functions and the final results of counts.
+<b>data > output  folder</b> has 5 csv
+<ul
+    <li>4 csv files correspond to each ideal function</li>
+    <li>output.csv contains the collaborated information from running</li>
+    <li>each test data across the selected ideal functions and the final results of counts.</li>
+</ul>
 
 <h2>Set up</h2>
     1. Clone the develop branch
@@ -22,9 +24,8 @@ each test data across the selected ideal functions and the final results of coun
 conda version : 4.10.3
 Use miniconda to set up an environment
 
-Or you can install these packages or 
+Or you can install these packages
 # packages in environment at /Users/sh.kumar/opt/miniconda3:
-# Name                    Version                   Build  Channel
 appnope                   0.1.2           py39hecd8cb5_1001  
 backcall                  0.2.0              pyhd3eb1b0_0  
 blas                      1.0                         mkl  
