@@ -29,7 +29,8 @@ class Stat:
                 y1 = fn1[i].to_numpy()
                 y2 = fn2[j].to_numpy()
                 for k in range(len(y1)):
-                    sum += (y1[k]-y2[k]) * (y1[k]-y2[k])
+                    if(k < len(y2)):
+                        sum += (y1[k]-y2[k]) * (y1[k]-y2[k])
                 if (sum < minSum):
                     minSum = sum
                     info[i] = j

@@ -19,7 +19,7 @@ class CSVCleanser:
         """
             provides information about the data after
                 removing duplicates
-                remonin na
+                removing na
                 sroting by first column
         """
         info = {}
@@ -61,14 +61,23 @@ class CSVCleanser:
     def __filter_rows_by_values(self, df, col, values):
         return df[~df[col].isin(values)]
 
-    def removeOutliers(self, col): 
+    def __remove_outliers(self, col): 
         """
             removes outliers using the __filter_rows_by_values private function utility
         """
         self.df.sort_values(0, inplace=True)
-        self.df.drop_duplicates(inplace=True)
         outliers = self.__outlier_info(col)
         self.df = self.__filter_rows_by_values(self.df, col, outliers)
+    
+    def remove_all_outliers(self):
+        dfs = []
+        for col in self.df.columns:
+            self.__remove_outliers(col)
 
     def print_cleansing_info(self):
         print('cleaning file information for {}: {}'.format(self.label, self.__clean_info()))
+        outliers=0
+        for col in self.df.columns:
+            outliers += len(self.__outlier_info(col))
+        print('total outliers for {}: {}'.format(self.label, outliers))
+        print('\n')
